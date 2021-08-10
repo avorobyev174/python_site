@@ -16,7 +16,7 @@
 		<div class="header">
 			<ul id="mainmenu" class="mainmenu">
 				<li class="logo"><a href="{% url 'home' %}"><div class="logo"></div></a></li>
-				{% for m in menu=getmenu %}
+				{% for m in menu %}
 					{% if not forloop.last %}
 							<li><a href="{% url m.url_name %}">{{m.title}}</a></li>
 					{% else %}
@@ -33,7 +33,7 @@
 <tr>
 <!-- Sidebar слева -->
 	<td valign="top" class="left-chapters">
-		{% getcats 2%}
+<!--		{% getcats 2%}-->
 <!--{{ menu }}-->
 
 	<ul id="leftchapters">

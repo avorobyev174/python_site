@@ -22,11 +22,11 @@ def show_categories(sort=None, cat_selected=0):
     return {"cats": cats, 'cat_selected': cat_selected}
 
 
-@register.simple_tag(name='getmenu')
-def get_menu():
-    return [{'title': "О сайте", 'url_name': 'about'},
-                  {'title': "Добавить статью", 'url_name': 'add_page'},
-                  {'title': "Обратная связь", 'url_name': 'contact'},
-                  {'title': "Войти", 'url_name': 'login'}]
+# @register.simple_tag(name='getmenu')
+# def get_menu():
+#     return [{'title': "О сайте", 'url_name': 'about'},
+#                   {'title': "Добавить статью", 'url_name': 'add_page'},
+#                   {'title': "Обратная связь", 'url_name': 'contact'},
+#                   {'title': "Войти", 'url_name': 'login'}]
 
 
